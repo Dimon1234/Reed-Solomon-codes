@@ -1,28 +1,25 @@
-package sample.service;
+package service;
 
-import sample.model.TestQuestion;
+import model.TestQuestion;
 
 import java.util.*;
 
 public class TestQuestionService {
-    private List<TestQuestion> questions;
+    private static List<TestQuestion> questions;
 
     /**
      * Инициализирует лист 10 рандомными вопросами
      */
-    public TestQuestionService() {
+    static {
         questions.addAll(Objects.requireNonNull(ParseService.parse()));
         Collections.shuffle(questions);
         questions = questions.subList(0,10);
     }
+    private TestQuestionService() {
 
-    public void print()
-    {
-        int i = 0;
-        for (TestQuestion question : questions) System.out.println(i+++" "+question);
     }
 
-    public List<TestQuestion> getQuestions() {
+    public static List<TestQuestion> getQuestions() {
         return questions;
     }
 }

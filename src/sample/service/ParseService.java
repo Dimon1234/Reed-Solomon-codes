@@ -1,6 +1,6 @@
-package sample.service;
+package service;
 
-import sample.model.TestQuestion;
+import model.TestQuestion;
 
 import java.io.*;
 import java.util.ArrayList;

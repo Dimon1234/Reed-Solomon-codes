@@ -11,6 +11,7 @@ public class TestQuestionService {
      * Инициализирует лист 10 рандомными вопросами
      */
     static {
+        questions = new ArrayList<>();
         questions.addAll(Objects.requireNonNull(ParseService.parse()));
         Collections.shuffle(questions);
         questions = questions.subList(0,10);

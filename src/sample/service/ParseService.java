@@ -16,7 +16,7 @@ public class ParseService {
      */
     public static List<TestQuestion> parse() {
         List<TestQuestion> questions = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/que.txt")))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("src/que.txt"))) {
             while (reader.ready()) {
                 String line = reader.readLine();
                 if (line.equals("")) break;

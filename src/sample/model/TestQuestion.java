@@ -1,6 +1,8 @@
 package model;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Objects;
 
 /**
@@ -35,6 +37,11 @@ public class TestQuestion {
 
     public void setVariants(String[] variants) {
         this.variants = variants;
+    }
+
+    public void shuffle()
+    {
+        Collections.shuffle(Arrays.asList(variants));
     }
 
     @Override

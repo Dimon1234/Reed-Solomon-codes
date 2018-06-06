@@ -25,12 +25,10 @@
         <cursor>
             <Cursor fx:constant="HAND"/>
         </cursor>
-        <children>
-            <Label fx:id="label0" text="Label" GridPane.rowIndex="0" onMouseClicked="#answerAction"/>
-            <Label fx:id="label1" text="Label" GridPane.rowIndex="1" onMouseClicked="#answerAction"/>
-            <Label fx:id="label2" text="Label" GridPane.rowIndex="2" onMouseClicked="#answerAction"/>
-            <Label fx:id="label3" text="Label" GridPane.rowIndex="3" onMouseClicked="#answerAction"/>
-        </children>
+        <Label fx:id="label0" text="Label" GridPane.rowIndex="0" onMouseClicked="#answerAction"/>
+        <Label fx:id="label1" text="Label" GridPane.rowIndex="1" onMouseClicked="#answerAction"/>
+        <Label fx:id="label2" text="Label" GridPane.rowIndex="2" onMouseClicked="#answerAction"/>
+        <Label fx:id="label3" text="Label" GridPane.rowIndex="3" onMouseClicked="#answerAction"/>
     </GridPane>
     <Button fx:id="exitBtn" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#exitAction"
             prefWidth="100.0" text="Выход"/>

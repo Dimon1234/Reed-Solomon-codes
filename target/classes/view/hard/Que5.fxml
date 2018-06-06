@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="view.hard.Que2"
+            fx:controller="view.hard.Que5"
             prefHeight="495.0" prefWidth="790.0">
 
 </AnchorPane>

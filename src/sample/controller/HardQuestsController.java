@@ -36,7 +36,7 @@ public class HardQuestsController implements Initializable, ExitController {
     public void changeQuestion(MouseEvent event) {
         Button button = (Button) event.getSource();
         if (button.getId().equals("IDBtn")) currentQuestion = 0;
-        else currentQuestion = Integer.parseInt(button.getId().substring(2));
+        else currentQuestion = Integer.parseInt(button.getId().substring(3));
         getQuestion(currentQuestion);
     }
 

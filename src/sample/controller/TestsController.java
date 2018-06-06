@@ -3,11 +3,9 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 import model.TestQuestion;
 import service.TestQuestionService;
 
@@ -18,7 +16,7 @@ import java.util.ResourceBundle;
 
 public class TestsController implements Initializable {
 
-    private int startScore = 50; //начальный рейтинг
+    private static int startScore = 50; //начальный рейтинг
     private int questionNumber = 1; //номер вопроса
     private List<TestQuestion> questions = TestQuestionService.getQuestions();
     private String rightAnswer;
@@ -50,7 +48,6 @@ public class TestsController implements Initializable {
         if (questionNumber == 10)
         {
             try {
-                mainPane.getParent();
                 mainPane.getChildren().clear();
                 mainPane.getChildren().add(FXMLLoader.load(getClass().getResource("/view/HardQuestBottomPanel.fxml")));
             } catch (IOException e) {
@@ -78,4 +75,7 @@ public class TestsController implements Initializable {
         label3.setText(question.getVariants()[3]);
     }
 
+    public static int getStartScore() {
+        return startScore;
+    }
 }

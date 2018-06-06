@@ -24,8 +24,6 @@ public class GreetingController implements Initializable {
     public void initialize(URL location, ResourceBundle r) {
         textAr.setEditable(false);
         changeGreeting();
-
-
     }
 
 

@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class GreetingController implements Initializable {
+public class GreetingController implements Initializable, ExitController {
 
     @FXML public Button BtnExit;
     @FXML public Button BtnNext;
@@ -23,6 +23,7 @@ public class GreetingController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle r) {
         textAr.setEditable(false);
+        BtnExit.setOnMouseClicked(event -> exit());
         changeGreeting();
     }
 

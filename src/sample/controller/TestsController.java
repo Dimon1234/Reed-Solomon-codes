@@ -1,23 +1,29 @@
 package controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import model.TestQuestion;
 import service.TestQuestionService;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class TestsController implements Initializable {
-    private int startScore = 50; //начальный рейтинг
+public class TestsController implements Initializable, ExitController {
+
+    private static int startScore = 50; //начальный рейтинг
     private int questionNumber = 1; //номер вопроса
     private List<TestQuestion> questions = TestQuestionService.getQuestions();
     private String rightAnswer;
 
+    @FXML public Button exitBtn;
+    @FXML public AnchorPane mainPane;
     @FXML public Label questNumber; //поле с номером вопроса
     @FXML public Label questTest; //поле с заголовком вопроса
     @FXML public Label score; //поле с рейтингом
@@ -27,12 +33,10 @@ public class TestsController implements Initializable {
     @FXML public Label label2;
     @FXML public Label label3;
 
-    public void exitAction(MouseEvent mouseEvent) {
-
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        exitBtn.setOnMouseClicked(event -> exit());
         nextQuestion();
     }
 
@@ -40,15 +44,27 @@ public class TestsController implements Initializable {
         Label label = (Label) mouseEvent.getSource();
         if (label.getText().equals(rightAnswer)) startScore+=2;
         else startScore -=2;
-        questionNumber++;
-        nextQuestion();
+        //если 10 тестовых вопросов закончились
+        if (questionNumber == 10)
+        {
+            try {
+                mainPane.getChildren().clear();
+                mainPane.getChildren().add(FXMLLoader.load(getClass().getResource("/view/HardQuestBottomPanel.fxml")));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else {
+            questionNumber++;
+            nextQuestion();
+        }
     }
 
     private void nextQuestion()
     {
         score.setText("Рейтинг: "+startScore);
         questNumber.setText("Вопрос №"+questionNumber);
-        TestQuestion question = questions.get(questionNumber);
+        TestQuestion question = questions.get(questionNumber-1);
         questTest.setText(question.getTextQuestion());
 
         rightAnswer = question.getVariants()[0];
@@ -59,4 +75,7 @@ public class TestsController implements Initializable {
         label3.setText(question.getVariants()[3]);
     }
 
+    public static int getStartScore() {
+        return startScore;
+    }
 }

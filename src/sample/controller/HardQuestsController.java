@@ -3,6 +3,7 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
@@ -34,6 +35,7 @@ public class HardQuestsController implements Initializable, ExitController {
         scoreLabel.setText("Рейтинг: " + score);
         getQuestion(currentQuestion);
         nextBtn.setOnMouseClicked(event -> next());
+
     }
 
     @FXML
@@ -44,8 +46,26 @@ public class HardQuestsController implements Initializable, ExitController {
         getQuestion(currentQuestion);
     }
 
+    boolean first = true;
+
     private void next(){
-        getQuestion(++currentQuestion);
+        if (currentQuestion == 0) {
+            getQuestion(++currentQuestion);
+            return;
+        }
+        score--;
+        scoreLabel.setText("Рейтинг: " + score);
+        if (first) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("Ваш ответ не верный. Рейтинг уменьшен на 1 балл");
+            alert.showAndWait();
+        } else {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("Ваш ответ не верный. Рейтинг уменьшен на 1 балл");
+            alert.showAndWait();
+            getQuestion(++currentQuestion);
+        }
+        first = !first;
     }
 
     private void getQuestion(int chosenQuestion) {

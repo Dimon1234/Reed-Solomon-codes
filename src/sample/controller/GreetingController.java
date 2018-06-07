@@ -27,10 +27,8 @@ public class GreetingController implements Initializable, ExitController {
         changeGreeting();
     }
 
-
     @FXML
-    private void changeGreeting()
-    {
+    private void changeGreeting() {
         try {
             String greeting = GreetingsService.getGreeting();
             if (greeting == null)

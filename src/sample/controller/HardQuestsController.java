@@ -13,6 +13,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class HardQuestsController implements Initializable, ExitController {
+
     private int currentQuestion = 0; //текущий вопрос
     private int score = 0;
     @FXML
@@ -23,6 +24,8 @@ public class HardQuestsController implements Initializable, ExitController {
     public Button exitBtn;
     @FXML
     public Label scoreLabel;
+    @FXML
+    public Button nextBtn;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -30,6 +33,7 @@ public class HardQuestsController implements Initializable, ExitController {
         score = TestsController.getStartScore();
         scoreLabel.setText("Рейтинг: " + score);
         getQuestion(currentQuestion);
+        nextBtn.setOnMouseClicked(event -> next());
     }
 
     @FXML
@@ -38,6 +42,10 @@ public class HardQuestsController implements Initializable, ExitController {
         if (button.getId().equals("IDBtn")) currentQuestion = 0;
         else currentQuestion = Integer.parseInt(button.getId().substring(3));
         getQuestion(currentQuestion);
+    }
+
+    private void next(){
+        getQuestion(++currentQuestion);
     }
 
     private void getQuestion(int chosenQuestion) {

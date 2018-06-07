@@ -6,8 +6,8 @@ import javafx.scene.control.ButtonType;
 import java.util.Optional;
 
 public interface ExitController {
-    default void exit()
-    {
+
+    default void exit() {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle("Warning");
         alert.setHeaderText("Завершить тестирование?");

@@ -44,35 +44,29 @@ public class TestsController implements Initializable, ExitController {
     public void answerAction(MouseEvent mouseEvent) {
         Label label = (Label) mouseEvent.getSource();
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        if (label.getText().equals(rightAnswer))
-        {
+        if (label.getText().equals(rightAnswer)) {
             startScore+=2;
             alert.setHeaderText("Ваш рейтинг увеличился на 2");
-        }
-        else
-        {
+        } else {
             startScore -=2;
             alert.setHeaderText("Ваш рейтинг уменьшился на 2");
         }
-        alert.showAndWait();
+//        alert.showAndWait();
         //если 10 тестовых вопросов закончились
-        if (questionNumber == 10)
-        {
+        if (questionNumber == 10) {
             try {
                 mainPane.getChildren().clear();
                 mainPane.getChildren().add(FXMLLoader.load(getClass().getResource("/view/HardQuestBottomPanel.fxml")));
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-        else {
+        } else {
             questionNumber++;
             nextQuestion();
         }
     }
 
-    private void nextQuestion()
-    {
+    private void nextQuestion() {
         score.setText("Рейтинг: "+startScore);
         questNumber.setText("Вопрос №"+questionNumber);
         TestQuestion question = questions.get(questionNumber-1);

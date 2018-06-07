@@ -20,7 +20,6 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("view/Greeting.fxml"));
         primaryStage.setTitle("Соломон-Рид");
         primaryStage.setScene(new Scene(root, 800, 600));
-
         primaryStage.show();
 
     }

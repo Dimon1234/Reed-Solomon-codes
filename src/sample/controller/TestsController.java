@@ -3,6 +3,7 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
@@ -42,8 +43,18 @@ public class TestsController implements Initializable, ExitController {
 
     public void answerAction(MouseEvent mouseEvent) {
         Label label = (Label) mouseEvent.getSource();
-        if (label.getText().equals(rightAnswer)) startScore+=2;
-        else startScore -=2;
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        if (label.getText().equals(rightAnswer))
+        {
+            startScore+=2;
+            alert.setHeaderText("Ваш рейтинг увеличился на 2");
+        }
+        else
+        {
+            startScore -=2;
+            alert.setHeaderText("Ваш рейтинг уменьшился на 2");
+        }
+        alert.showAndWait();
         //если 10 тестовых вопросов закончились
         if (questionNumber == 10)
         {

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Line?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="600.0" prefWidth="800.0"
+fx:controller="controller.FinalController">
+    <Label fx:id="lab1" alignment="CENTER" contentDisplay="CENTER" layoutX="381.0" layoutY="29.0"
+           wrapText="true" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="10.0">
+        <font>
+            <Font name="Arial Black" size="28.0"/>
+        </font>
+    </Label>
+    <Line endX="790.0" layoutX="365.0" layoutY="136.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
+</AnchorPane>

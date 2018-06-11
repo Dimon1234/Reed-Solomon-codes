@@ -7,7 +7,7 @@ import javafx.scene.control.Label;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class FinalController implements Initializable {
+public class FinalController implements Initializable, ExitController {
 
     @FXML public Label lab1;
 

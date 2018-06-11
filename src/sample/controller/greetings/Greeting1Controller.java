@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Greeting1Controller implements Initializable, ExitController {
+public class Greeting1Controller extends Greeting {
 
     @FXML
     public Button BtnExit;

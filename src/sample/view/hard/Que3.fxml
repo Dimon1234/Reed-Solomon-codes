@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Font?>
-
+<?import javafx.scene.text.*?>
 <AnchorPane prefHeight="495.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.hardQuestions.Que3">
     <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="381.0" layoutY="29.0"
            text="Построить таблицу элементов сложения поля Галуа" wrapText="true" AnchorPane.leftAnchor="30.0"
            AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="10.0">
@@ -42,55 +36,55 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
         </rowConstraints>
         <children>
-            <TextField/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1"/>
-            <TextField layoutX="94.0" layoutY="13.0" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6" GridPane.rowIndex="6"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6" GridPane.rowIndex="5"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5" GridPane.rowIndex="6"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5" GridPane.rowIndex="5"/>
-            <TextField layoutX="431.0" layoutY="163.0" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4" GridPane.rowIndex="6"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3" GridPane.rowIndex="6"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3" GridPane.rowIndex="5"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6" GridPane.rowIndex="4"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2"/>
-            <TextField layoutX="178.0" layoutY="13.0" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5" GridPane.rowIndex="4"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.rowIndex="4"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.rowIndex="6"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.rowIndex="5"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5"/>
+            <TextField fx:id="f1"/>
+            <TextField fx:id="f2" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1"/>
+            <TextField fx:id="f3" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2"/>
+            <TextField fx:id="f4" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3"/>
+            <TextField fx:id="f5" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4"/>
+            <TextField fx:id="f6" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5"/>
+            <TextField fx:id="f7" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6"/>
+            <TextField fx:id="f8" layoutX="10.0" layoutY="13.0" GridPane.rowIndex="1"/>
+            <TextField fx:id="f9" layoutX="10.0" layoutY="43.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <TextField fx:id="f10" layoutX="51.0" layoutY="43.0" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            <TextField fx:id="f11" layoutX="92.0" layoutY="43.0" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+            <TextField fx:id="f12" layoutX="133.0" layoutY="43.0" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+            <TextField fx:id="f13" layoutX="175.0" layoutY="43.0" GridPane.columnIndex="5" GridPane.rowIndex="1"/>
+            <TextField fx:id="f14" layoutX="217.0" layoutY="43.0" GridPane.columnIndex="6" GridPane.rowIndex="1"/>
+            <TextField fx:id="f15" layoutX="10.0" layoutY="43.0" GridPane.rowIndex="2"/>
+            <TextField fx:id="f16" layoutX="10.0" layoutY="73.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <TextField fx:id="f17" layoutX="51.0" layoutY="73.0" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            <TextField fx:id="f18" layoutX="92.0" layoutY="73.0" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+            <TextField fx:id="f19" layoutX="133.0" layoutY="73.0" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+            <TextField fx:id="f20" layoutX="175.0" layoutY="73.0" GridPane.columnIndex="5" GridPane.rowIndex="2"/>
+            <TextField fx:id="f21" layoutX="217.0" layoutY="73.0" GridPane.columnIndex="6" GridPane.rowIndex="2"/>
+            <TextField fx:id="f22" layoutX="259.0" layoutY="73.0" GridPane.rowIndex="3"/>
+            <TextField fx:id="f23" layoutX="10.0" layoutY="103.0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <TextField fx:id="f24" layoutX="51.0" layoutY="103.0" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+            <TextField fx:id="f25" layoutX="92.0" layoutY="103.0" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+            <TextField fx:id="f26" layoutX="133.0" layoutY="103.0" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+            <TextField fx:id="f27" layoutX="175.0" layoutY="103.0" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
+            <TextField fx:id="f28" layoutX="217.0" layoutY="103.0" GridPane.columnIndex="6" GridPane.rowIndex="3"/>
+            <TextField fx:id="f29" layoutX="259.0" layoutY="103.0" GridPane.rowIndex="4"/>
+            <TextField fx:id="f30" layoutX="10.0" layoutY="133.0" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            <TextField fx:id="f31" layoutX="51.0" layoutY="133.0" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+            <TextField fx:id="f32" layoutX="92.0" layoutY="133.0" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+            <TextField fx:id="f33" layoutX="133.0" layoutY="133.0" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
+            <TextField fx:id="f34" layoutX="175.0" layoutY="133.0" GridPane.columnIndex="5" GridPane.rowIndex="4"/>
+            <TextField fx:id="f35" layoutX="217.0" layoutY="133.0" GridPane.columnIndex="6" GridPane.rowIndex="4"/>
+            <TextField fx:id="f36" layoutX="259.0" layoutY="133.0" GridPane.rowIndex="5"/>
+            <TextField fx:id="f37" layoutX="10.0" layoutY="163.0" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+            <TextField fx:id="f38" layoutX="51.0" layoutY="163.0" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+            <TextField fx:id="f39" layoutX="92.0" layoutY="163.0" GridPane.columnIndex="3" GridPane.rowIndex="5"/>
+            <TextField fx:id="f40" layoutX="133.0" layoutY="163.0" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+            <TextField fx:id="f41" layoutX="175.0" layoutY="163.0" GridPane.columnIndex="5" GridPane.rowIndex="5"/>
+            <TextField fx:id="f42" layoutX="217.0" layoutY="163.0" GridPane.columnIndex="6" GridPane.rowIndex="5"/>
+            <TextField fx:id="f43" layoutX="259.0" layoutY="163.0" GridPane.rowIndex="6"/>
+            <TextField fx:id="f44" layoutX="10.0" layoutY="193.0" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+            <TextField fx:id="f45" layoutX="51.0" layoutY="193.0" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+            <TextField fx:id="f46" layoutX="92.0" layoutY="193.0" GridPane.columnIndex="3" GridPane.rowIndex="6"/>
+            <TextField fx:id="f47" layoutX="133.0" layoutY="193.0" GridPane.columnIndex="4" GridPane.rowIndex="6"/>
+            <TextField fx:id="f48" layoutX="175.0" layoutY="193.0" GridPane.columnIndex="5" GridPane.rowIndex="6"/>
+            <TextField fx:id="f49" layoutX="217.0" layoutY="193.0" GridPane.columnIndex="6" GridPane.rowIndex="6"/>
         </children>
     </GridPane>
     <VBox layoutX="150.0" layoutY="180.0" prefHeight="200.0" prefWidth="100.0">

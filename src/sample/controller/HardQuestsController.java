@@ -1,5 +1,6 @@
 package controller;
 
+import controller.hardQuestions.Que1;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -18,7 +19,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class HardQuestsController implements Initializable, ExitController {
-    private Variant variant;
+    private static Variant variant;
     private int currentQuestion = 0; //текущий вопрос
     private static int score = 0;
     private int i = 2; //две ошибки на вопрос
@@ -57,31 +58,32 @@ public class HardQuestsController implements Initializable, ExitController {
         getQuestion(currentQuestion);
     }
 
-    private boolean first = false;
 
     private void next() {
+
         if (currentQuestion == 0) {
             getQuestion(++currentQuestion);
-            return;
         }
-
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        if (first) {
-            score += 2;
-            alert.setContentText("Ваш ответ верный. Рейтинг увеличен на 2 балла");
-            i = 2;
-            getQuestion(++currentQuestion);
-        } else {
-            score -= 1;
-            i--;
-            alert.setContentText("Ваш ответ не верный. Рейтинг уменьшен на 1 балл");
-            if (i == 0)
-            {
-                getQuestion(++currentQuestion);
+        else {
+            boolean first = Que1.check();
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            if (first) {
+                score += 2;
+                alert.setContentText("Ваш ответ верный. Рейтинг увеличен на 2 балла");
                 i = 2;
-            } else updateScore();
+                getQuestion(++currentQuestion);
+            } else {
+                score -= 1;
+                i--;
+                alert.setContentText("Ваш ответ не верный. Рейтинг уменьшен на 1 балл");
+                if (i == 0) {
+                    getQuestion(++currentQuestion);
+                    i = 2;
+                } else updateScore();
+            }
+
+            alert.showAndWait();
         }
-        alert.showAndWait();
     }
 
     private void getQuestion(int chosenQuestion) {
@@ -185,5 +187,9 @@ public class HardQuestsController implements Initializable, ExitController {
 
     public static int getScore() {
         return score;
+    }
+
+    public static Variant getVariant() {
+        return variant;
     }
 }

@@ -7,34 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f12bbdfa-30db-47fe-9f9d-b683e058b24f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/resources/answers.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/resources/variants.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que10.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que11.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que12.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que14.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que15.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que3.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que5.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que6.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que7.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que8.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/model/Answers.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/service/CheckQuestionService.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/que.txt" afterPath="$PROJECT_DIR$/src/resources/que.txt" />
       <change beforePath="$PROJECT_DIR$/src/sample/controller/HardQuestsController.java" afterPath="$PROJECT_DIR$/src/sample/controller/HardQuestsController.java" />
-      <change beforePath="$PROJECT_DIR$/src/sample/controller/hardQuestions/InitQueController.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que1.java" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que1.java" />
-      <change beforePath="$PROJECT_DIR$/src/sample/greetings.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/sample/model/Variant.java" afterPath="$PROJECT_DIR$/src/sample/model/Variant.java" />
-      <change beforePath="$PROJECT_DIR$/src/sample/service/InitVariantsService.java" afterPath="$PROJECT_DIR$/src/sample/service/InitVariantsService.java" />
-      <change beforePath="$PROJECT_DIR$/src/sample/service/ParseService.java" afterPath="$PROJECT_DIR$/src/sample/service/ParseService.java" />
-      <change beforePath="$PROJECT_DIR$/src/sample/view/hard/InitialDataQue.fxml" afterPath="$PROJECT_DIR$/src/sample/view/hard/InitialDataQue.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que2.java" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que2.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que3.java" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que3.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que4.java" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que4.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que5.java" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que5.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que6.java" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que6.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que7.java" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que7.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que8.java" afterPath="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que8.java" />
       <change beforePath="$PROJECT_DIR$/src/sample/view/hard/Que1.fxml" afterPath="$PROJECT_DIR$/src/sample/view/hard/Que1.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/variants.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/sample/view/hard/Que2.fxml" afterPath="$PROJECT_DIR$/src/sample/view/hard/Que2.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/sample/view/hard/Que3.fxml" afterPath="$PROJECT_DIR$/src/sample/view/hard/Que3.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/sample/view/hard/Que4.fxml" afterPath="$PROJECT_DIR$/src/sample/view/hard/Que4.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/sample/view/hard/Que5.fxml" afterPath="$PROJECT_DIR$/src/sample/view/hard/Que5.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/sample/view/hard/Que6.fxml" afterPath="$PROJECT_DIR$/src/sample/view/hard/Que6.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/sample/view/hard/Que7.fxml" afterPath="$PROJECT_DIR$/src/sample/view/hard/Que7.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/sample/view/hard/Que8.fxml" afterPath="$PROJECT_DIR$/src/sample/view/hard/Que8.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +37,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Que1.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que1.fxml">
+      <file leaf-file-name="Que4.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="70" column="112" lean-forward="false" selection-start-line="70" selection-start-column="112" selection-end-line="70" selection-end-column="112" />
+            <state relative-caret-position="330">
+              <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Que6.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que6.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Que7.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Que2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="35" column="117" lean-forward="false" selection-start-line="35" selection-start-column="117" selection-end-line="35" selection-end-column="117" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Que3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HardQuestsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controller/HardQuestsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Que6.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que6.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -59,22 +116,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Que14.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que14.java">
+      <file leaf-file-name="Que8.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Que15.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que15.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="211">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,71 +131,20 @@
       <file leaf-file-name="Que1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+            <state relative-caret-position="391">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InitVariantsService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/service/InitVariantsService.java">
+      <file leaf-file-name="Que.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="31" column="95" lean-forward="false" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/service/ParseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="18" column="86" lean-forward="false" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+            <state relative-caret-position="51">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controller/TestsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HardQuestsController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/controller/HardQuestsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5120#5121#0" expanded="true" />
-                <element signature="e#5175#5176#0" expanded="true" />
-                <element signature="e#5413#5414#0" expanded="true" />
-                <element signature="e#5441#5442#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitialDataQue.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/view/hard/InitialDataQue.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
@@ -177,17 +175,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/sample/controller/GreetingController.java" />
-        <option value="$PROJECT_DIR$/src/sample/view/TestQuestions.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/view/hard/Que3.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/view/hard/Que8.fxml" />
         <option value="$PROJECT_DIR$/src/sample/view/hard/Que10.fxml" />
         <option value="$PROJECT_DIR$/src/sample/view/hard/Que9.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/view/hard/Que7.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/view/hard/Que6.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/view/hard/Que5.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/view/hard/Que4.fxml" />
         <option value="$PROJECT_DIR$/src/sample/controller/ExitController.java" />
         <option value="$PROJECT_DIR$/src/sample/greetings.properties" />
         <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/que1c.java" />
@@ -197,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/sample/view/greetings/Greeting2.fxml" />
         <option value="$PROJECT_DIR$/src/sample/view/hard/Que12.fxml" />
         <option value="$PROJECT_DIR$/src/sample/view/Final.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/view/hard/Que2.fxml" />
         <option value="$PROJECT_DIR$/src/sample/view/hard/Que11.fxml" />
         <option value="$PROJECT_DIR$/src/sample/view/hard/Que15.fxml" />
         <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que13.java" />
@@ -211,17 +199,33 @@
         <option value="$PROJECT_DIR$/src/sample/controller/greetings/Greeting2Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/service/CheckQuestionService.java" />
         <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/InitQueController.java" />
-        <option value="$PROJECT_DIR$/src/sample/view/hard/InitialDataQue.fxml" />
         <option value="$PROJECT_DIR$/src/sample/model/Answer.java" />
         <option value="$PROJECT_DIR$/src/sample/model/Answers.java" />
         <option value="$PROJECT_DIR$/src/answers.txt" />
         <option value="$PROJECT_DIR$/src/variants.txt" />
         <option value="$PROJECT_DIR$/src/sample/model/Variant.java" />
-        <option value="$PROJECT_DIR$/src/sample/view/hard/Que1.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que1.java" />
         <option value="$PROJECT_DIR$/src/sample/service/ParseService.java" />
         <option value="$PROJECT_DIR$/src/sample/service/InitVariantsService.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/CheckQuestion.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que1.java" />
         <option value="$PROJECT_DIR$/src/sample/controller/HardQuestsController.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que3.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que2.java" />
+        <option value="$PROJECT_DIR$/src/sample/view/hard/Que1.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/view/hard/InitialDataQue.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/view/hard/Que2.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/view/hard/Que3.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/view/hard/Que4.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/view/hard/Que5.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que5.java" />
+        <option value="$PROJECT_DIR$/src/sample/view/hard/Que6.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/view/hard/Que7.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/view/hard/Que8.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que4.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que6.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que7.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que8.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/hardQuestions/Que.java" />
       </list>
     </option>
   </component>
@@ -274,6 +278,12 @@
               <item name="Solomon" type="b2602c69:ProjectViewProjectNode" />
               <item name="Solomon" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Solomon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Solomon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -288,7 +298,45 @@
               <item name="Solomon" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="greetings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Solomon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Solomon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="hardQuestions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Solomon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Solomon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Solomon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Solomon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Solomon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Solomon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Solomon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Solomon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="hard" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -491,7 +539,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -523,12 +571,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/sample/controller/HardQuestsController.java</url>
-          <line>22</line>
+          <line>23</line>
           <properties field="score" class="controller.HardQuestsController" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -537,134 +585,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que4.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="22" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que15.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que9.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <marker date="1528352193162" expanded="true" signature="1428:1439" ph="..." />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que8.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que7.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="60" lean-forward="false" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que10.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="113" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="20" selection-end-column="113" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que12.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que13.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que14.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que11.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -723,14 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que9.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -747,26 +659,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/que.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/InitQueController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/answers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="256" column="0" lean-forward="true" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -795,30 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/model/Variant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
-          <folding>
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
-            <element signature="e#905#906#0" expanded="false" />
-            <element signature="e#930#931#0" expanded="false" />
-            <element signature="e#954#955#0" expanded="false" />
-            <element signature="e#980#981#0" expanded="false" />
-            <element signature="e#1005#1006#0" expanded="false" />
-            <element signature="e#1031#1032#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1085#1086#0" expanded="false" />
-            <element signature="e#1110#1111#0" expanded="false" />
-            <element signature="e#1144#1145#0" expanded="false" />
-            <element signature="e#1174#1175#0" expanded="false" />
-            <element signature="e#1259#1260#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/model/Answers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -830,54 +702,6 @@
             <element signature="e#331#332#0" expanded="false" />
             <element signature="e#377#378#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,37 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que1.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="70" column="112" lean-forward="false" selection-start-line="70" selection-start-column="112" selection-end-line="70" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/TestsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/variants.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -964,33 +761,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/service/InitVariantsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="31" column="95" lean-forward="false" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/greetings.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/InitialDataQue.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/javafx/event/EventHandlerManager.java">
@@ -1001,17 +777,269 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/HardQuestsController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/CheckQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/service/InitVariantsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="31" column="95" lean-forward="false" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="2547" column="0" lean-forward="false" selection-start-line="2547" selection-start-column="0" selection-end-line="2547" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/model/Variant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="60" column="43" lean-forward="false" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/que.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/variants.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="164" column="11" lean-forward="false" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
+          <folding>
+            <element signature="e#6283#6284#0" expanded="false" />
+            <element signature="e#6351#6352#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que1.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="115" lean-forward="false" selection-start-line="75" selection-start-column="115" selection-end-line="75" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/InitialDataQue.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que3.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que5.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="117" lean-forward="false" selection-start-line="36" selection-start-column="117" selection-end-line="36" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5120#5121#0" expanded="true" />
-            <element signature="e#5175#5176#0" expanded="true" />
-            <element signature="e#5413#5414#0" expanded="true" />
-            <element signature="e#5441#5442#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que4.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/answers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que7.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que8.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/hard/Que6.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/fxml/Initializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/HardQuestsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="35" column="117" lean-forward="false" selection-start-line="35" selection-start-column="117" selection-end-line="35" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/hardQuestions/Que.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

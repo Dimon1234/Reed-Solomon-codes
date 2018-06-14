@@ -1,19 +1,32 @@
 package controller.hardQuestions;
 
+import controller.HardQuestsController;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Que4 implements Initializable{
-
+public class Que4 implements Initializable, Que {
+    public TextField f1;
     public ImageView image;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Image img = new Image("/controller/hardQuestions/pic1.png");
         image.setImage(img);
+
+        f1.textProperty().addListener(
+                (observable, oldValue, newValue) -> {
+                    if (newValue.length() > 5) f1.setText(oldValue);
+                });
     }
+
+    @Override
+    public boolean check() {
+        return f1.getCharacters().toString().equals(HardQuestsController.getVariant().getAnswers().getListAnswers().get(3));
+    }
+
 }

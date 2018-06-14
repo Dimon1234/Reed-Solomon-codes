@@ -2,14 +2,13 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-
 <AnchorPane prefHeight="495.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1">
-    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="381.0" layoutY="29.0"
-           text="Определить синдром для кодовой комбинации Fr = 4036434" wrapText="true" AnchorPane.leftAnchor="30.0"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.hardQuestions.Que8">
+    <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="381.0" layoutY="29.0"
+           text="Определить синдром для кодовой комбинации Fr = " wrapText="true" AnchorPane.leftAnchor="30.0"
            AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="10.0">
         <font>
             <Font name="Arial Black" size="28.0"/>
@@ -21,5 +20,6 @@
             <Font size="28.0"/>
         </font>
     </Label>
-    <TextField layoutX="407.0" layoutY="239.0" minHeight="30.0" prefWidth="80.0" AnchorPane.leftAnchor="350.0"/>
+    <TextField fx:id="f1" layoutX="407.0" layoutY="239.0" minHeight="30.0" prefWidth="80.0"
+               AnchorPane.leftAnchor="350.0"/>
 </AnchorPane>

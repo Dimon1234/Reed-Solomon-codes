@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.shape.Line?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.Font?>
-
 <AnchorPane prefHeight="495.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.hardQuestions.Que5">
 
     <Label alignment="CENTER" contentDisplay="CENTER" layoutX="381.0" layoutY="29.0"
            text="Построить проверочную матрицу Рида-Соломона" wrapText="true" AnchorPane.leftAnchor="30.0"
@@ -38,34 +33,34 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
         </rowConstraints>
         <children>
-            <TextField/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1"/>
-            <TextField layoutX="94.0" layoutY="13.0" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2"/>
-            <TextField layoutX="178.0" layoutY="13.0" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5" GridPane.rowIndex="2"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6" GridPane.rowIndex="1"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6"/>
-            <TextField layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5"/>
+            <TextField fx:id="f1"/>
+            <TextField fx:id="f2" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1"/>
+            <TextField fx:id="f3" layoutX="53.0" layoutY="13.0" GridPane.columnIndex="2"/>
+            <TextField fx:id="f4" layoutX="96.0" layoutY="13.0" GridPane.columnIndex="3"/>
+            <TextField fx:id="f5" layoutX="139.0" layoutY="13.0" GridPane.columnIndex="4"/>
+            <TextField fx:id="f6" layoutX="182.0" layoutY="13.0" GridPane.columnIndex="5"/>
+            <TextField fx:id="f7" layoutX="225.0" layoutY="13.0" GridPane.columnIndex="6"/>
+            <TextField fx:id="f8" layoutX="268.0" layoutY="13.0" GridPane.rowIndex="1"/>
+            <TextField fx:id="f9" layoutX="10.0" layoutY="43.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <TextField fx:id="f10" layoutX="53.0" layoutY="43.0" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            <TextField fx:id="f11" layoutX="96.0" layoutY="43.0" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+            <TextField fx:id="f12" layoutX="139.0" layoutY="43.0" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+            <TextField fx:id="f13" layoutX="182.0" layoutY="43.0" GridPane.columnIndex="5" GridPane.rowIndex="1"/>
+            <TextField fx:id="f14" layoutX="225.0" layoutY="43.0" GridPane.columnIndex="6" GridPane.rowIndex="1"/>
+            <TextField fx:id="f15" layoutX="268.0" layoutY="43.0" GridPane.rowIndex="2"/>
+            <TextField fx:id="f16" layoutX="10.0" layoutY="73.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <TextField fx:id="f17" layoutX="53.0" layoutY="73.0" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            <TextField fx:id="f18" layoutX="96.0" layoutY="73.0" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+            <TextField fx:id="f19" layoutX="139.0" layoutY="73.0" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+            <TextField fx:id="f20" layoutX="182.0" layoutY="73.0" GridPane.columnIndex="5" GridPane.rowIndex="2"/>
+            <TextField fx:id="f21" layoutX="225.0" layoutY="73.0" GridPane.columnIndex="6" GridPane.rowIndex="2"/>
+            <TextField fx:id="f22" layoutX="268.0" layoutY="73.0" GridPane.rowIndex="3"/>
+            <TextField fx:id="f23" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <TextField fx:id="f24" layoutX="53.0" layoutY="103.0" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+            <TextField fx:id="f25" layoutX="96.0" layoutY="103.0" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+            <TextField fx:id="f26" layoutX="139.0" layoutY="103.0" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+            <TextField fx:id="f27" layoutX="182.0" layoutY="103.0" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
+            <TextField fx:id="f28" layoutX="225.0" layoutY="103.0" GridPane.columnIndex="6" GridPane.rowIndex="3"/>
         </children>
     </GridPane>
     <Line endX="-30.0" layoutX="250.0" layoutY="202.0" startX="-50.0"/>

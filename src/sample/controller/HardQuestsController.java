@@ -8,6 +8,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import model.Variant;
+import service.InitVariantsService;
 
 import java.io.IOException;
 import java.net.URL;
@@ -16,9 +18,10 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class HardQuestsController implements Initializable, ExitController {
-
+    private Variant variant;
     private int currentQuestion = 0; //текущий вопрос
     private static int score = 0;
+    private int i = 2; //две ошибки на вопрос
     @FXML
     public Button IDBtn, Btn1, Btn2, Btn3, Btn4, Btn5, Btn6, Btn7, Btn8, Btn9, Btn10, Btn11, Btn12, Btn13, Btn14, Btn15;
     @FXML
@@ -32,6 +35,7 @@ public class HardQuestsController implements Initializable, ExitController {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        variant = InitVariantsService.getRandomVariant();
         exitBtn.setOnMouseClicked(event -> exit());
         score = TestsController.getStartScore();
         scoreLabel.setText("Рейтинг: " + score);
@@ -40,7 +44,7 @@ public class HardQuestsController implements Initializable, ExitController {
 
 
         final List<Button> btnList = Arrays.asList(Btn1, Btn2, Btn3, Btn4, Btn5, Btn6, Btn7, Btn8, Btn9, Btn10, Btn11, Btn12, Btn13, Btn14, Btn15);
-        btnList.forEach(btn->btn.setDisable(true));
+        btnList.forEach(btn -> btn.setDisable(true));
 
 
     }
@@ -53,39 +57,45 @@ public class HardQuestsController implements Initializable, ExitController {
         getQuestion(currentQuestion);
     }
 
-    boolean first = true;
+    private boolean first = false;
 
     private void next() {
         if (currentQuestion == 0) {
             getQuestion(++currentQuestion);
             return;
         }
-        fireButton(currentQuestion);
-        score--;
-        scoreLabel.setText("Рейтинг: " + score);
+
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         if (first) {
-            alert.setContentText("Ваш ответ не верный. Рейтинг уменьшен на 1 балл");
-        } else {
-            alert.setContentText("Ваш ответ не верный. Рейтинг уменьшен на 1 балл");
+            score += 2;
+            alert.setContentText("Ваш ответ верный. Рейтинг увеличен на 2 балла");
+            i = 2;
             getQuestion(++currentQuestion);
+        } else {
+            score -= 1;
+            i--;
+            alert.setContentText("Ваш ответ не верный. Рейтинг уменьшен на 1 балл");
+            if (i == 0)
+            {
+                getQuestion(++currentQuestion);
+                i = 2;
+            } else updateScore();
         }
         alert.showAndWait();
-        first = !first;
     }
 
     private void getQuestion(int chosenQuestion) {
-        if (chosenQuestion == 16)
-        {
+        if (chosenQuestion == 16) {
             try {
                 mainPane.getChildren().clear();
                 mainPane.getChildren().add(FXMLLoader.load(getClass().getResource("/view/Final.fxml")));
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-        else {
+        } else {
             try {
+                updateScore();
+                fireButton(currentQuestion);
                 mainPane.getChildren().clear();
                 mainPane.getChildren().add(FXMLLoader.load(getClass().getResource(getFileForQuestion(chosenQuestion))));
             } catch (IOException e) {
@@ -93,28 +103,81 @@ public class HardQuestsController implements Initializable, ExitController {
             }
         }
     }
-    private void fireButton(int currentQuestion)
-    {
-        switch (currentQuestion)
-        {
-            case 0: {IDBtn.setDisable(false); break;}
-            case 1: {Btn1.setDisable(false); break;}
-            case 2: {Btn2.setDisable(false); break;}
-            case 3: {Btn3.setDisable(false); break;}
-            case 4: {Btn4.setDisable(false); break;}
-            case 5: {Btn5.setDisable(false); break;}
-            case 6: {Btn6.setDisable(false); break;}
-            case 7: {Btn7.setDisable(false); break;}
-            case 8: {Btn8.setDisable(false); break;}
-            case 9: {Btn9.setDisable(false); break;}
-            case 10: {Btn10.setDisable(false); break;}
-            case 11: {Btn11.setDisable(false); break;}
-            case 12: {Btn12.setDisable(false); break;}
-            case 13: {Btn13.setDisable(false); break;}
-            case 14: {Btn14.setDisable(false); break;}
-            case 15: {Btn15.setDisable(false); break;}
+
+    private void fireButton(int currentQuestion) {
+        switch (currentQuestion) {
+            case 0: {
+                IDBtn.setDisable(false);
+                break;
+            }
+            case 1: {
+                Btn1.setDisable(false);
+                break;
+            }
+            case 2: {
+                Btn2.setDisable(false);
+                break;
+            }
+            case 3: {
+                Btn3.setDisable(false);
+                break;
+            }
+            case 4: {
+                Btn4.setDisable(false);
+                break;
+            }
+            case 5: {
+                Btn5.setDisable(false);
+                break;
+            }
+            case 6: {
+                Btn6.setDisable(false);
+                break;
+            }
+            case 7: {
+                Btn7.setDisable(false);
+                break;
+            }
+            case 8: {
+                Btn8.setDisable(false);
+                break;
+            }
+            case 9: {
+                Btn9.setDisable(false);
+                break;
+            }
+            case 10: {
+                Btn10.setDisable(false);
+                break;
+            }
+            case 11: {
+                Btn11.setDisable(false);
+                break;
+            }
+            case 12: {
+                Btn12.setDisable(false);
+                break;
+            }
+            case 13: {
+                Btn13.setDisable(false);
+                break;
+            }
+            case 14: {
+                Btn14.setDisable(false);
+                break;
+            }
+            case 15: {
+                Btn15.setDisable(false);
+                break;
+            }
         }
     }
+
+    private void updateScore()
+    {
+        scoreLabel.setText("Рейтинг: " + score);
+    }
+
     private String getFileForQuestion(int questionNum) {
         String baseName = "/view/hard/";
         return baseName + (questionNum == 0 ? "InitialDataQue" : "Que" + questionNum) + ".fxml";

@@ -9,14 +9,16 @@ public class Variant {
     private int pi;
     private int Fo;
     private String Ep;
+    private Answers answers;
 
-    public Variant(int varNumber, int m, int i, int pi, int fo, String ep) {
+    public Variant(int varNumber, int m, int i, int pi, int fo, String ep, Answers answers) {
         this.varNumber = varNumber;
         this.m = m;
         this.i = i;
         this.pi = pi;
         Fo = fo;
         Ep = ep;
+        this.answers = answers;
     }
 
     public Variant(String[] line)
@@ -51,6 +53,13 @@ public class Variant {
 
     public String getEp() {
         return Ep;
+    }
+    public Answers getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(Answers answers) {
+        this.answers = answers;
     }
 
     @Override

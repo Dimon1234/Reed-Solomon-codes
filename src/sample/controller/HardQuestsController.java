@@ -1,5 +1,6 @@
 package controller;
 
+import controller.hardQuestions.Que;
 import controller.hardQuestions.Que1;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import model.Variant;
+import service.CheckQuestionService;
 import service.InitVariantsService;
 
 import java.io.IOException;
@@ -17,6 +19,9 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
+
+import static com.sun.javafx.scene.control.skin.Utils.getResource;
+import static java.lang.Class.forName;
 
 public class HardQuestsController implements Initializable, ExitController {
     private static Variant variant;
@@ -65,7 +70,7 @@ public class HardQuestsController implements Initializable, ExitController {
             getQuestion(++currentQuestion);
         }
         else {
-            boolean first = Que1.check();
+            boolean first = CheckQuestionService.check(currentQuestion);
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             if (first) {
                 score += 2;

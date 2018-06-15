@@ -12,7 +12,7 @@ import java.util.ResourceBundle;
 public class Que2 implements Initializable, Que {
 
     public TextField b1, b2, b3, b4, b5, b6, b7;
-    private List<TextField> list;
+    private static List<TextField> list;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -31,8 +31,7 @@ public class Que2 implements Initializable, Que {
         ));
     }
 
-    @Override
-    public boolean check() {
+    public static boolean check() {
         StringBuilder builder = new StringBuilder();
         list.forEach(filed -> builder.append(filed.getCharacters().toString()).append(" "));
         return builder.toString().trim().equals(HardQuestsController.getVariant().getAnswers().getListAnswers().get(1));

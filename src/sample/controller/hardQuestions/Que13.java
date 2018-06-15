@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
 public class Que13 implements Initializable, Que {
     public ImageView image;
     public ChoiceBox<Integer> chBox1, chBox2;
-    private List<ChoiceBox<Integer>> list;
+    private static List<ChoiceBox<Integer>> list;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -31,8 +31,8 @@ public class Que13 implements Initializable, Que {
         list.forEach(ch -> ch.setItems(observableList));
     }
 
-    @Override
-    public boolean check() {
+
+    public static boolean check() {
         StringBuilder builder = new StringBuilder();
         list.forEach(filed -> builder.append(filed.getValue()).append(" "));
         return builder.toString().trim().equals(HardQuestsController.getVariant().getAnswers().getListAnswers().get(12));

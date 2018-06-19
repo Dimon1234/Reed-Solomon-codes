@@ -16,15 +16,15 @@
     <Line endX="790.0" layoutX="365.0" layoutY="136.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
     <Label layoutX="171.0" layoutY="248.0" text="l1 = ">
         <font>
-            <Font size="15.0"/>
+            <Font size="20.0"/>
         </font>
     </Label>
-    <ChoiceBox fx:id="chBox1" layoutX="202.0" layoutY="246.0" prefWidth="15.0"/>
+    <ChoiceBox fx:id="chBox1" layoutX="212.0" layoutY="251.0" prefWidth="15.0"/>
     <Label layoutX="396.0" layoutY="248.0" text="l2 = ">
         <font>
-            <Font size="15.0"/>
+            <Font size="20.0"/>
         </font>
     </Label>
-    <ChoiceBox fx:id="chBox2" layoutX="427.0" layoutY="246.0" prefWidth="15.0"/>
+    <ChoiceBox fx:id="chBox2" layoutX="437.0" layoutY="251.0" prefWidth="15.0"/>
 
 </AnchorPane>

@@ -86,7 +86,7 @@ public class HardQuestsController implements Initializable, ExitController {
                 } else updateScore();
             }
 
-          //  alert.showAndWait();
+            alert.showAndWait();
         }
     }
 

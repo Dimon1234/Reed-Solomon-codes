@@ -21,6 +21,10 @@
         </font>
     </Label>
     <TextField fx:id="f1" layoutX="364.0" layoutY="236.0" minHeight="30.0" prefWidth="80.0"
-               AnchorPane.leftAnchor="364.0"/>
+               AnchorPane.leftAnchor="364.0">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </TextField>
 
 </AnchorPane>

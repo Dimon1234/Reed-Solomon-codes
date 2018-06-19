@@ -20,5 +20,9 @@
             <Font size="28.0"/>
         </font>
     </Label>
-    <TextField fx:id="f1" layoutX="407.0" layoutY="239.0" minHeight="30.0" prefWidth="80.0"/>
+    <TextField fx:id="f1" layoutX="396.0" layoutY="231.0" minHeight="30.0" prefHeight="40.0" prefWidth="92.0">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </TextField>
 </AnchorPane>

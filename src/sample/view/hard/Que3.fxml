@@ -36,55 +36,251 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
         </rowConstraints>
         <children>
-            <TextField fx:id="f1"/>
-            <TextField fx:id="f2" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1"/>
-            <TextField fx:id="f3" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2"/>
-            <TextField fx:id="f4" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3"/>
-            <TextField fx:id="f5" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4"/>
-            <TextField fx:id="f6" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5"/>
-            <TextField fx:id="f7" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6"/>
-            <TextField fx:id="f8" layoutX="10.0" layoutY="13.0" GridPane.rowIndex="1"/>
-            <TextField fx:id="f9" layoutX="10.0" layoutY="43.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-            <TextField fx:id="f10" layoutX="51.0" layoutY="43.0" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
-            <TextField fx:id="f11" layoutX="92.0" layoutY="43.0" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
-            <TextField fx:id="f12" layoutX="133.0" layoutY="43.0" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
-            <TextField fx:id="f13" layoutX="175.0" layoutY="43.0" GridPane.columnIndex="5" GridPane.rowIndex="1"/>
-            <TextField fx:id="f14" layoutX="217.0" layoutY="43.0" GridPane.columnIndex="6" GridPane.rowIndex="1"/>
-            <TextField fx:id="f15" layoutX="10.0" layoutY="43.0" GridPane.rowIndex="2"/>
-            <TextField fx:id="f16" layoutX="10.0" layoutY="73.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-            <TextField fx:id="f17" layoutX="51.0" layoutY="73.0" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
-            <TextField fx:id="f18" layoutX="92.0" layoutY="73.0" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
-            <TextField fx:id="f19" layoutX="133.0" layoutY="73.0" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
-            <TextField fx:id="f20" layoutX="175.0" layoutY="73.0" GridPane.columnIndex="5" GridPane.rowIndex="2"/>
-            <TextField fx:id="f21" layoutX="217.0" layoutY="73.0" GridPane.columnIndex="6" GridPane.rowIndex="2"/>
-            <TextField fx:id="f22" layoutX="259.0" layoutY="73.0" GridPane.rowIndex="3"/>
-            <TextField fx:id="f23" layoutX="10.0" layoutY="103.0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-            <TextField fx:id="f24" layoutX="51.0" layoutY="103.0" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
-            <TextField fx:id="f25" layoutX="92.0" layoutY="103.0" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
-            <TextField fx:id="f26" layoutX="133.0" layoutY="103.0" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
-            <TextField fx:id="f27" layoutX="175.0" layoutY="103.0" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
-            <TextField fx:id="f28" layoutX="217.0" layoutY="103.0" GridPane.columnIndex="6" GridPane.rowIndex="3"/>
-            <TextField fx:id="f29" layoutX="259.0" layoutY="103.0" GridPane.rowIndex="4"/>
-            <TextField fx:id="f30" layoutX="10.0" layoutY="133.0" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-            <TextField fx:id="f31" layoutX="51.0" layoutY="133.0" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
-            <TextField fx:id="f32" layoutX="92.0" layoutY="133.0" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
-            <TextField fx:id="f33" layoutX="133.0" layoutY="133.0" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
-            <TextField fx:id="f34" layoutX="175.0" layoutY="133.0" GridPane.columnIndex="5" GridPane.rowIndex="4"/>
-            <TextField fx:id="f35" layoutX="217.0" layoutY="133.0" GridPane.columnIndex="6" GridPane.rowIndex="4"/>
-            <TextField fx:id="f36" layoutX="259.0" layoutY="133.0" GridPane.rowIndex="5"/>
-            <TextField fx:id="f37" layoutX="10.0" layoutY="163.0" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
-            <TextField fx:id="f38" layoutX="51.0" layoutY="163.0" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
-            <TextField fx:id="f39" layoutX="92.0" layoutY="163.0" GridPane.columnIndex="3" GridPane.rowIndex="5"/>
-            <TextField fx:id="f40" layoutX="133.0" layoutY="163.0" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
-            <TextField fx:id="f41" layoutX="175.0" layoutY="163.0" GridPane.columnIndex="5" GridPane.rowIndex="5"/>
-            <TextField fx:id="f42" layoutX="217.0" layoutY="163.0" GridPane.columnIndex="6" GridPane.rowIndex="5"/>
-            <TextField fx:id="f43" layoutX="259.0" layoutY="163.0" GridPane.rowIndex="6"/>
-            <TextField fx:id="f44" layoutX="10.0" layoutY="193.0" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
-            <TextField fx:id="f45" layoutX="51.0" layoutY="193.0" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
-            <TextField fx:id="f46" layoutX="92.0" layoutY="193.0" GridPane.columnIndex="3" GridPane.rowIndex="6"/>
-            <TextField fx:id="f47" layoutX="133.0" layoutY="193.0" GridPane.columnIndex="4" GridPane.rowIndex="6"/>
-            <TextField fx:id="f48" layoutX="175.0" layoutY="193.0" GridPane.columnIndex="5" GridPane.rowIndex="6"/>
-            <TextField fx:id="f49" layoutX="217.0" layoutY="193.0" GridPane.columnIndex="6" GridPane.rowIndex="6"/>
+            <TextField fx:id="f1">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f2" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="1">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f3" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="2">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f4" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="3">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f5" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="4">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f6" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="5">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f7" layoutX="10.0" layoutY="13.0" GridPane.columnIndex="6">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f8" layoutX="10.0" layoutY="13.0" GridPane.rowIndex="1">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f9" layoutX="10.0" layoutY="43.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f10" layoutX="51.0" layoutY="43.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f11" layoutX="92.0" layoutY="43.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f12" layoutX="133.0" layoutY="43.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f13" layoutX="175.0" layoutY="43.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f14" layoutX="217.0" layoutY="43.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f15" layoutX="10.0" layoutY="43.0" GridPane.rowIndex="2">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f16" layoutX="10.0" layoutY="73.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f17" layoutX="51.0" layoutY="73.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f18" layoutX="92.0" layoutY="73.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f19" layoutX="133.0" layoutY="73.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f20" layoutX="175.0" layoutY="73.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f21" layoutX="217.0" layoutY="73.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f22" layoutX="259.0" layoutY="73.0" GridPane.rowIndex="3">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f23" layoutX="10.0" layoutY="103.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f24" layoutX="51.0" layoutY="103.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f25" layoutX="92.0" layoutY="103.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f26" layoutX="133.0" layoutY="103.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f27" layoutX="175.0" layoutY="103.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f28" layoutX="217.0" layoutY="103.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f29" layoutX="259.0" layoutY="103.0" GridPane.rowIndex="4">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f30" layoutX="10.0" layoutY="133.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f31" layoutX="51.0" layoutY="133.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f32" layoutX="92.0" layoutY="133.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f33" layoutX="133.0" layoutY="133.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f34" layoutX="175.0" layoutY="133.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f35" layoutX="217.0" layoutY="133.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f36" layoutX="259.0" layoutY="133.0" GridPane.rowIndex="5">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f37" layoutX="10.0" layoutY="163.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f38" layoutX="51.0" layoutY="163.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f39" layoutX="92.0" layoutY="163.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f40" layoutX="133.0" layoutY="163.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f41" layoutX="175.0" layoutY="163.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f42" layoutX="217.0" layoutY="163.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f43" layoutX="259.0" layoutY="163.0" GridPane.rowIndex="6">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f44" layoutX="10.0" layoutY="193.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f45" layoutX="51.0" layoutY="193.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f46" layoutX="92.0" layoutY="193.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f47" layoutX="133.0" layoutY="193.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f48" layoutX="175.0" layoutY="193.0" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="f49" layoutX="217.0" layoutY="193.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </TextField>
         </children>
     </GridPane>
     <VBox layoutX="150.0" layoutY="180.0" prefHeight="200.0" prefWidth="100.0">

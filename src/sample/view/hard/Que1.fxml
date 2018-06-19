@@ -4,8 +4,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.*?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="495.0" prefWidth="790.0"
-            xmlns="http://javafx.com/javafx/8.0.121" fx:controller="controller.hardQuestions.Que1">
+<AnchorPane prefHeight="495.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.hardQuestions.Que1">
     <children>
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="381.0" layoutY="29.0"
                text="Построить расширенное поле Галуа GF(2^3) для примитивного элемента a = x. Элементы представить в векторной форме."
@@ -72,13 +72,41 @@
                         <Font size="20.0"/>
                     </font>
                 </Label>
-                <TextField fx:id="a1" GridPane.columnIndex="1"/>
-                <TextField fx:id="a2" layoutX="105.0" layoutY="19.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                <TextField fx:id="a3" layoutX="105.0" layoutY="62.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                <TextField fx:id="a4" layoutX="105.0" layoutY="105.0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-                <TextField fx:id="a5" layoutX="105.0" layoutY="148.0" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-                <TextField fx:id="a6" layoutX="105.0" layoutY="191.0" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
-                <TextField fx:id="a7" layoutX="105.0" layoutY="234.0" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+                <TextField fx:id="a1" GridPane.columnIndex="1">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="a2" layoutX="105.0" layoutY="19.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="a3" layoutX="105.0" layoutY="62.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="a4" layoutX="105.0" layoutY="105.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="a5" layoutX="105.0" layoutY="148.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="a6" layoutX="105.0" layoutY="191.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="a7" layoutX="105.0" layoutY="234.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </TextField>
             </children>
         </GridPane>
     </children>

@@ -12,6 +12,9 @@ import java.util.ResourceBundle;
 public class Que15 implements Initializable, Que {
     public TextField f1;
     private static List<TextField> list;
+    private static String answers = HardQuestsController.getVariant().getAnswers().getListAnswers().get(14);
+    private static boolean isClosed = false;
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -23,6 +26,16 @@ public class Que15 implements Initializable, Que {
                 }
         );
 
+        if (isClosed) close();
+    }
+
+    public static void close() {
+        String[] listAnswers = answers.split(" ");
+        for (int i = 0; i < listAnswers.length; i++) {
+            list.get(i).setText(listAnswers[i]);
+            list.get(i).setDisable(true);
+        }
+        isClosed = true;
     }
 
 

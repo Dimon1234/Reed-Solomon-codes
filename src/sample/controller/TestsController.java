@@ -23,16 +23,25 @@ public class TestsController implements Initializable, ExitController {
     private List<TestQuestion> questions = TestQuestionService.getQuestions();
     private String rightAnswer;
 
-    @FXML public Button exitBtn;
-    @FXML public AnchorPane mainPane;
-    @FXML public Label questNumber; //поле с номером вопроса
-    @FXML public Label questTest; //поле с заголовком вопроса
-    @FXML public Label score; //поле с рейтингом
+    @FXML
+    public Button exitBtn;
+    @FXML
+    public AnchorPane mainPane;
+    @FXML
+    public Label questNumber; //поле с номером вопроса
+    @FXML
+    public Label questTest; //поле с заголовком вопроса
+    @FXML
+    public Label score; //поле с рейтингом
     //вопросы
-    @FXML public Label label0;
-    @FXML public Label label1;
-    @FXML public Label label2;
-    @FXML public Label label3;
+    @FXML
+    public Label label0;
+    @FXML
+    public Label label1;
+    @FXML
+    public Label label2;
+    @FXML
+    public Label label3;
 
 
     @Override
@@ -45,10 +54,10 @@ public class TestsController implements Initializable, ExitController {
         Label label = (Label) mouseEvent.getSource();
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         if (label.getText().equals(rightAnswer)) {
-            startScore+=2;
+            startScore += 2;
             alert.setHeaderText("Ваш рейтинг увеличился на 2");
         } else {
-            startScore -=2;
+            startScore -= 2;
             alert.setHeaderText("Ваш рейтинг уменьшился на 2");
         }
 //        alert.showAndWait();
@@ -67,9 +76,10 @@ public class TestsController implements Initializable, ExitController {
     }
 
     private void nextQuestion() {
-        score.setText("Рейтинг: "+startScore);
-        questNumber.setText("Вопрос №"+questionNumber);
-        TestQuestion question = questions.get(questionNumber-1);
+        score.setText("Рейтинг: " + startScore);
+        questNumber.setText("Вопрос №" + questionNumber);
+
+        TestQuestion question = questions.get(questionNumber - 1);
         questTest.setText(question.getTextQuestion());
 
         rightAnswer = question.getVariants()[0];

@@ -13,6 +13,8 @@ public class Que2 implements Initializable, Que {
 
     public TextField b1, b2, b3, b4, b5, b6, b7;
     private static List<TextField> list;
+    private static String answers = HardQuestsController.getVariant().getAnswers().getListAnswers().get(1);
+    private static boolean isClosed = false;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -29,6 +31,17 @@ public class Que2 implements Initializable, Que {
                     if (newValue.length() > 3) b.setText(oldValue);
                 }
         ));
+        if (isClosed) close();
+    }
+
+    public static void close()
+    {
+        String[] listAnswers = answers.split(" ");
+        for (int i = 0; i < listAnswers.length; i++) {
+            list.get(i).setText(listAnswers[i]);
+            list.get(i).setDisable(true);
+        }
+        isClosed = true;
     }
 
     public static boolean check() {

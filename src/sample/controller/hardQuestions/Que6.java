@@ -15,6 +15,9 @@ public class Que6 implements Initializable, Que {
     private TextField f1;
     private static List<TextField> list;
 
+    private static String answers = HardQuestsController.getVariant().getAnswers().getListAnswers().get(5);
+    private static boolean isClosed = false;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         list = new ArrayList<>();
@@ -23,8 +26,18 @@ public class Que6 implements Initializable, Que {
                 (observable, oldValue, newValue) -> {
                     if (newValue.length() > 7) f1.setText(oldValue);
                 });
+        if (isClosed) close();
     }
 
+    public static void close()
+    {
+        String[] listAnswers = answers.split(" ");
+        for (int i = 0; i < listAnswers.length; i++) {
+            list.get(i).setText(listAnswers[i]);
+            list.get(i).setDisable(true);
+        }
+        isClosed = true;
+    }
     public static boolean check() {
         StringBuilder builder = new StringBuilder();
         list.forEach(filed -> builder.append(filed.getCharacters().toString()).append(" "));

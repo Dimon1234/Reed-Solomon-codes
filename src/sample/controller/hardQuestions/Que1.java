@@ -15,6 +15,9 @@ public class Que1 implements Initializable, Que{
 
     @FXML public TextField a1, a2, a3, a4, a5, a6, a7;
     private static List<TextField> list;
+    private static String answers = HardQuestsController.getVariant().getAnswers().getListAnswers().get(0);
+    private static boolean isClosed = false;
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -27,12 +30,21 @@ public class Que1 implements Initializable, Que{
                     if (newValue.length() > 3) a.setText(oldValue);
                 }
         ));
-
+        if (isClosed) close();
     }
 
+    public static void close()
+    {
+        String[] listAnswers = answers.split(" ");
+        for (int i = 0; i < listAnswers.length; i++) {
+            list.get(i).setText(listAnswers[i]);
+            list.get(i).setDisable(true);
+        }
+        isClosed = true;
+    }
     public static boolean check() {
         StringBuilder builder = new StringBuilder();
         list.forEach(filed -> builder.append(filed.getCharacters().toString()).append(" "));
-        return builder.toString().trim().equals(HardQuestsController.getVariant().getAnswers().getListAnswers().get(0));
+        return builder.toString().trim().equals(answers);
     }
 }

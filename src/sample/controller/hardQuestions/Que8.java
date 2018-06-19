@@ -17,6 +17,8 @@ public class Que8 implements Initializable, Que {
     @FXML
     private Label label;
     private static List<TextField> list;
+    private static String answers = HardQuestsController.getVariant().getAnswers().getListAnswers().get(7);
+    private static boolean isClosed = false;
     private static String answer = HardQuestsController.getVariant().getAnswers().getListAnswers().get(7);
 
     @Override
@@ -26,10 +28,18 @@ public class Que8 implements Initializable, Que {
         label.setText(label.getText().concat(answer.substring(5)));
         f1.textProperty().addListener(
                 (observable, oldValue, newValue) -> {
-                    if (newValue.length() > 5) f1.setText(oldValue);
+                    if (newValue.length() > 4) f1.setText(oldValue);
                 });
+        if (isClosed) close();
     }
 
+    public static void close()
+    {
+        String[] listAnswers = answers.split(" ");
+        list.get(0).setText(listAnswers[0]);
+        list.get(0).setDisable(true);
+        isClosed = true;
+    }
 
     public static boolean check() {
         StringBuilder builder = new StringBuilder();

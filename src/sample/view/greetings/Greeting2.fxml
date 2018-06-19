@@ -9,60 +9,68 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121"
-          xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.greetings.Greeting2Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.greetings.Greeting2Controller">
     <columnConstraints>
-        <ColumnConstraints/>
+        <ColumnConstraints />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints/>
+        <RowConstraints />
     </rowConstraints>
-    <AnchorPane fx:id="contentPane" prefHeight="400.0" prefWidth="600.0">
-        <Button fx:id="BtnExit" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0"
-                prefWidth="100.0" text="Выход" AnchorPane.leftAnchor="10.0"/>
-        <Button fx:id="BtnNext" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#changeGreeting"
-                prefWidth="100.0" text="Дальше" AnchorPane.rightAnchor="10.0"/>
-        <Label layoutX="286.0" layoutY="14.0" text="Общие указания по выполнению работы: " wrapText="true"
-               AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+    <AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="800.0">
+        <Button fx:id="BtnExit" layoutX="20.0" layoutY="539.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Выход" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button fx:id="BtnNext" layoutX="680.0" layoutY="539.0" mnemonicParsing="false" onMouseClicked="#changeGreeting" prefWidth="100.0" text="Дальше" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Label layoutX="286.0" layoutY="14.0" text="Общие указания по выполнению работы: " wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
             <font>
-                <Font name="Arial Black" size="22.0"/>
+                <Font name="Arial Black" size="30.0" />
             </font>
         </Label>
-        <Label layoutX="286.0" layoutY="46.0" text="1. Перед началом работы Вам присваивается рейтинг 50 баллов"
-               AnchorPane.leftAnchor="10.0">
+        <Label layoutX="10.0" layoutY="89.0" text="1. Перед началом работы Вам присваивается рейтинг 50 баллов" AnchorPane.leftAnchor="10.0">
             <font>
-                <Font size="15.0"/>
+                <Font size="18.0" />
             </font>
         </Label>
-        <Label layoutX="286.0" layoutY="67.0"
-               text="2. Входной контроль состоит из 10 вопросов. На каждый вопрос предлагается 5 вариантов ответов. При правильном ответе рейтинг увеличивается на 2 балла, при неправильном - уменьшается на 2 балла. При выполнении заданий программы исследований даются 2 попытки ответа. При правильном ответе с первой попытки рейтинг увеличивается на 2 балла, со второй попытки - на 1 балл. При каждом неправильном ответе рейтинг уменьшается на 1 балл."
-               wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <Label layoutX="10.0" layoutY="123.0" text="2. Входной контроль состоит из 10 вопросов. На каждый вопрос предлагается 5 вариантов ответов. При правильном ответе рейтинг увеличивается на 2 балла, при неправильном - уменьшается на 2 балла. При выполнении заданий программы исследований даются 2 попытки ответа. При правильном ответе с первой попытки рейтинг увеличивается на 2 балла, со второй попытки - на 1 балл. При каждом неправильном ответе рейтинг уменьшается на 1 балл." wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
             <font>
-                <Font size="15.0"/>
+                <Font size="18.0" />
             </font>
             <padding>
-                <Insets bottom="50.0"/>
+                <Insets bottom="50.0" />
             </padding>
         </Label>
-        <Label layoutX="272.0" layoutY="200.0"
-               text="3. Итоговая оценка по лабораторной работе выставляется в соответствии с финальным рейтингом:"
-               wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <Label layoutX="10.0" layoutY="290.0" text="3. Итоговая оценка по лабораторной работе выставляется в соответствии с финальным рейтингом:" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
             <font>
-                <Font size="15.0"/>
+                <Font size="18.0" />
             </font>
         </Label>
-        <Label layoutX="272.0" layoutY="243.0" text="Отлично&quot; рейтинг от 85 до 100 " AnchorPane.leftAnchor="30.0"
-               AnchorPane.topAnchor="250.0"/>
-        <Label layoutX="286.0" layoutY="259.0" text="&quot;Хорошо&quot; рейтинг от 68 до 84 "
-               AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="265.0"/>
-        <Label layoutX="272.0" layoutY="282.0" text="&quot;Удовлетворительно рейтинг от 50 до 67"
-               AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="280.0"/>
-        <Label layoutX="272.0" layoutY="297.0" text="&quot;Неудовлетворительно&quot; рейтинг от 0 до 49"
-               AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="295.0"/>
-        <Label layoutX="272.0" layoutY="319.0" text="4. В лабораторной работе предусмотрен выбор варианта"
-               AnchorPane.leftAnchor="10.0">
+        <Label layoutX="15.0" layoutY="350.0" text="&quot;Отлично&quot; рейтинг от 85 до 100 " AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="350.0">
             <font>
-                <Font size="15.0"/>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="375.0" text="&quot;Хорошо&quot; рейтинг от 68 до 84 " AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="375.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="400.0" text="&quot;Удовлетворительно рейтинг от 50 до 67" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="400.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="425.0" text="&quot;Неудовлетворительно&quot; рейтинг от 0 до 49" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="425.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="461.0" text="4. В лабораторной работе вариант выбирается автоматически" AnchorPane.leftAnchor="14.0">
+            <font>
+                <Font size="18.0" />
             </font>
         </Label>
 

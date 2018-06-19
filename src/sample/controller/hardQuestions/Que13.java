@@ -18,10 +18,12 @@ public class Que13 implements Initializable, Que {
     public ImageView image;
     public ChoiceBox<Integer> chBox1, chBox2;
     private static List<ChoiceBox<Integer>> list;
+    private static String answers = HardQuestsController.getVariant().getAnswers().getListAnswers().get(12);
+    private static boolean isClosed = false;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Image img = new Image("/controller/hardQuestions/pic3.png");
+        Image img = new Image(getClass().getResource("/pic3.png").toString());
         image.setImage(img);
         list = new ArrayList<>();
         ObservableList<Integer> observableList = FXCollections.observableArrayList(0, 1, 2, 3, 4, 5, 6, 7);
@@ -29,8 +31,18 @@ public class Que13 implements Initializable, Que {
                 Arrays.asList(chBox1, chBox2)
         );
         list.forEach(ch -> ch.setItems(observableList));
+        if (isClosed) close();
     }
 
+    public static void close()
+    {
+        String[] listAnswers = answers.split(" ");
+        for (int i = 0; i < listAnswers.length; i++) {
+            list.get(i).setValue(Integer.parseInt(listAnswers[i]));
+            list.get(i).setDisable(true);
+        }
+        isClosed = true;
+    }
 
     public static boolean check() {
         StringBuilder builder = new StringBuilder();

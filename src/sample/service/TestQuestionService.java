@@ -12,7 +12,7 @@ public class TestQuestionService {
      */
     static {
         questions = new ArrayList<>();
-        questions.addAll(Objects.requireNonNull(ParseService.parse()));
+        questions.addAll(ParseService.parse());
         Collections.shuffle(questions);
         questions = questions.subList(0,10);
     }

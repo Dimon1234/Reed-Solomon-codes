@@ -15,6 +15,8 @@ public class Que5 implements Initializable, Que {
     public TextField f21, f22, f23, f24, f25, f26, f27, f28;
 
     private static List<TextField> list;
+    private static String answers = HardQuestsController.getVariant().getAnswers().getListAnswers().get(4);
+    private static boolean isClosed = false;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -29,8 +31,18 @@ public class Que5 implements Initializable, Que {
                 }
         ));
 
+        if (isClosed) close();
     }
 
+    public static void close()
+    {
+        String[] listAnswers = answers.split(" ");
+        for (int i = 0; i < listAnswers.length; i++) {
+            list.get(i).setText(listAnswers[i]);
+            list.get(i).setDisable(true);
+        }
+        isClosed = true;
+    }
     public static boolean check() {
         StringBuilder builder = new StringBuilder();
         list.forEach(filed -> builder.append(filed.getCharacters().toString()).append(" "));

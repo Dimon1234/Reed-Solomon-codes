@@ -1,7 +1,6 @@
 package controller;
 
-import controller.hardQuestions.Que;
-import controller.hardQuestions.Que1;
+import controller.hardQuestions.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -20,9 +19,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import static com.sun.javafx.scene.control.skin.Utils.getResource;
-import static java.lang.Class.forName;
-
 public class HardQuestsController implements Initializable, ExitController {
     private static Variant variant;
     private int currentQuestion = 0; //текущий вопрос
@@ -38,6 +34,7 @@ public class HardQuestsController implements Initializable, ExitController {
     public Label scoreLabel;
     @FXML
     public Button nextBtn;
+    private List<Button> btnList = null;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -49,7 +46,7 @@ public class HardQuestsController implements Initializable, ExitController {
         nextBtn.setOnMouseClicked(event -> next());
 
 
-        final List<Button> btnList = Arrays.asList(Btn1, Btn2, Btn3, Btn4, Btn5, Btn6, Btn7, Btn8, Btn9, Btn10, Btn11, Btn12, Btn13, Btn14, Btn15);
+        btnList = Arrays.asList(Btn1, Btn2, Btn3, Btn4, Btn5, Btn6, Btn7, Btn8, Btn9, Btn10, Btn11, Btn12, Btn13, Btn14, Btn15);
         btnList.forEach(btn -> btn.setDisable(true));
 
 
@@ -68,11 +65,13 @@ public class HardQuestsController implements Initializable, ExitController {
 
         if (currentQuestion == 0) {
             getQuestion(++currentQuestion);
-        }
-        else {
-            boolean first = CheckQuestionService.check(currentQuestion);
+        } else {
+            boolean isAnswerCorrect = CheckQuestionService.check(currentQuestion);
+            boolean isCurrentQuestionLast = currentQuestion == 15;
+            boolean isCurrentButtonDisable = true;
+            if (!isCurrentQuestionLast) isCurrentButtonDisable = btnList.get(currentQuestion).isDisable();
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            if (first) {
+            if (isAnswerCorrect & isCurrentButtonDisable) {
                 score += 2;
                 alert.setContentText("Ваш ответ верный. Рейтинг увеличен на 2 балла");
                 i = 2;
@@ -87,13 +86,15 @@ public class HardQuestsController implements Initializable, ExitController {
                 } else updateScore();
             }
 
-            alert.showAndWait();
+          //  alert.showAndWait();
         }
     }
 
     private void getQuestion(int chosenQuestion) {
         if (chosenQuestion == 16) {
             try {
+                updateScore();
+                Que15.close();
                 mainPane.getChildren().clear();
                 mainPane.getChildren().add(FXMLLoader.load(getClass().getResource("/view/Final.fxml")));
             } catch (IOException e) {
@@ -122,66 +123,79 @@ public class HardQuestsController implements Initializable, ExitController {
                 break;
             }
             case 2: {
+                Que1.close();
                 Btn2.setDisable(false);
                 break;
             }
             case 3: {
+                Que2.close();
                 Btn3.setDisable(false);
                 break;
             }
             case 4: {
+                Que3.close();
                 Btn4.setDisable(false);
                 break;
             }
             case 5: {
+                Que4.close();
                 Btn5.setDisable(false);
                 break;
             }
             case 6: {
+                Que5.close();
                 Btn6.setDisable(false);
                 break;
             }
             case 7: {
+                Que6.close();
                 Btn7.setDisable(false);
                 break;
             }
             case 8: {
+                Que7.close();
                 Btn8.setDisable(false);
                 break;
             }
             case 9: {
+                Que8.close();
                 Btn9.setDisable(false);
                 break;
             }
             case 10: {
+                Que9.close();
                 Btn10.setDisable(false);
                 break;
             }
             case 11: {
+                Que10.close();
                 Btn11.setDisable(false);
                 break;
             }
             case 12: {
+                Que11.close();
                 Btn12.setDisable(false);
                 break;
             }
             case 13: {
+                Que12.close();
                 Btn13.setDisable(false);
                 break;
             }
             case 14: {
+                Que13.close();
                 Btn14.setDisable(false);
                 break;
             }
             case 15: {
+                Que14.close();
                 Btn15.setDisable(false);
                 break;
             }
         }
     }
 
-    private void updateScore()
-    {
+    private void updateScore() {
         scoreLabel.setText("Рейтинг: " + score);
     }
 

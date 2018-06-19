@@ -16,6 +16,8 @@ public class Que12 implements Initializable, Que {
 
     public ChoiceBox<Integer> chBox1, chBox2;
     private static List<ChoiceBox<Integer>> list;
+    private static String answers = HardQuestsController.getVariant().getAnswers().getListAnswers().get(11);
+    private static boolean isClosed = false;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -26,6 +28,17 @@ public class Que12 implements Initializable, Que {
         );
         list.forEach(ch -> ch.setItems(observableList));
 
+        if (isClosed) close();
+    }
+
+    public static void close()
+    {
+        String[] listAnswers = answers.split(" ");
+        for (int i = 0; i < listAnswers.length; i++) {
+            list.get(i).setValue(Integer.parseInt(listAnswers[i]));
+            list.get(i).setDisable(true);
+        }
+        isClosed = true;
     }
 
     public static boolean check() {

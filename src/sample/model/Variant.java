@@ -5,24 +5,15 @@ import java.util.Objects;
 public class Variant {
     private int varNumber;
     private int m;
-    private  int i;
+    private int i;
     private int pi;
     private int Fo;
     private String Ep;
     private Answers answers;
 
-    public Variant(int varNumber, int m, int i, int pi, int fo, String ep, Answers answers) {
-        this.varNumber = varNumber;
-        this.m = m;
-        this.i = i;
-        this.pi = pi;
-        Fo = fo;
-        Ep = ep;
-        this.answers = answers;
-    }
 
-    public Variant(String[] line)
-    {
+    public Variant(String text) {
+        String[] line = text.split(" ");
         this.varNumber = Integer.parseInt(line[0]);
         this.m = Integer.parseInt(line[1]);
         this.i = Integer.parseInt(line[2]);
@@ -54,6 +45,7 @@ public class Variant {
     public String getEp() {
         return Ep;
     }
+
     public Answers getAnswers() {
         return answers;
     }

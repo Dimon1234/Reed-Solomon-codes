@@ -18,9 +18,11 @@ public class TestQuestion {
      */
     private String[] variants;
 
-    public TestQuestion(String textQuestion, String[] variants) {
-        this.textQuestion = textQuestion;
-        this.variants = variants;
+    public TestQuestion(String text) {
+        String[] array = text.split("\n");
+        this.textQuestion = array[0];
+        this.variants = new String[4];
+        System.arraycopy(array, 1, variants, 0, array.length - 1);
     }
 
     public String getTextQuestion() {
@@ -65,7 +67,6 @@ public class TestQuestion {
     public String toString() {
         return "TestQuestion{" +
                 "textQuestion='" + textQuestion + '\'' +
-                ", variants=" + Arrays.toString(variants) +
                 '}';
     }
 }
